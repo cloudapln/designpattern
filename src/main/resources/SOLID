@@ -1,0 +1,74 @@
+
+SOLID Design Principle
+
+S: Single Responsibility Principle (SRP)
+"One class should have one and only one responsibility"
+
+A class should have one, and only one, reason to change.
+Every class, or similar structure, in your code should have only one job to do.
+
+Mixing responsibilities also makes the class harder to understand and harder to test, 
+decreasing cohesion. The easiest way to fix this is to split the class into  different 
+classes, with each having only one responsibility: database access, calculating pay and
+ reporting, all separated.
+
+Otherwise this leads to fragile system,change in a class affects any other module.
+If code dont have proper test coverage,undiscove bugs ends up in production.
+
+The basis for this principle is cohesion. Cohesion represents the measure to which a class performs a single function. 
+Classes that are highly cohesive are easier to understand.But they are also easier to maintain. This is the motivating force behind SRP
+
+O: Open-Closed Principle (OCP)
+"Software components should be open for extension, but closed for modification"
+
+Classes,methods should be open for extension,close for modification.
+
+Therefore, one of the tenets of OCP is to reduce the coupling between classes to the abstract level. 
+
+The Open-Closed Principle (OCP) states that classes should be open for extension but closed 
+for modification. “Open to extension” means that you should design your classes so that new 
+functionality can be added as new requirements are generated. “Closed for modification” means 
+that once you have developed a class you should never modify it, except to correct bugs.
+
+You should be able to extend a classes behavior, without modifying it.
+
+Generally you achieve this by referring to abstractions for dependencies, such as interfaces 
+or abstract classes, rather than using concrete classes. Functionality can be added by creating 
+new classes that implement the interfaces.
+
+
+L: Liskov Substitution Principle (LSP)
+"Derived types must be completely substitutable for their base types"
+Subtypes must be substitutable for their base types.
+
+
+The Liskov Substitution Principle (LSP) applies to inheritance hierarchies, specifying that you 
+should design your classes so that client dependencies can be substituted with subclasses without 
+the client knowing about the change.
+
+All subclasses must, therefore, operate in the same manner as their base classes. The specific 
+functionality of the subclass may be different but must conform to the expected behaviour of the 
+base class. To be a true behavioural subtype, the subclass must not only implement the base class’s 
+methods and properties, but also conform to its implied behaviour.
+
+
+I: Interface Segregation Principle (ISP)
+"Clients should not be forced to implement unnecessary methods which they will not use"
+
+Make fine grained interfaces that are client specific.
+
+The Interface Segregation Principle (ISP) states that clients should not be forced to depend upon 
+interface members they do not use. When we have non-cohesive interfaces, the ISP guides us to create 
+multiple, smaller, cohesive interfaces.
+
+D: Dependency Inversion Principle (DIP)
+"Depend on abstractions, not on concretions"
+
+Depend on abstractions, not on concretions.
+
+The Dependency Inversion Principle (DIP) states that high-level modules should not depend upon low-level 
+modules; they should depend on abstractions. Secondly, abstractions should not depend upon details; 
+details should depend upon abstractions. The idea is that we isolate our class behind a boundary formed 
+by the abstractions it depends on. If all the details behind those abstractions change, then our class 
+is still safe. This helps keep coupling low and makes our design easier to change. DIP also allows us 
+to test things in isolation, details like database are plugins to our system.

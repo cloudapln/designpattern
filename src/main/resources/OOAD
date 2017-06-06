@@ -1,0 +1,42 @@
+
+OOAD 
+
+Abstraction
+Abstraction in Java is a way to isolate implementation from interface 
+Abstraction is implemented in Java using interface and abstract class
+
+===============================================================================
+Encapsulation
+Encapsulation in Java or object oriented programming language is a concept which enforce protecting variables, functions from outside of class, in order to better manage that piece of code and having least impact or no impact on other parts of program due to change in protected code
+Encapsulation is also called data hiding.
+
+Encapsulation is implemented using private, package-private and protected access modifier.
+http://javarevisited.blogspot.sg/2012/03/what-is-encapsulation-in-java-and-oops.html
+
+===============================================================================
+Polymorphism
+Polymorphism is an Oops concept which advice use of common interface instead of concrete implementation while writing code. 
+When we program for interface our code is capable of handling any new requirement or enhancement arise in near future due to 
+new implementation of our common interface. If we don't use common interface and rely on concrete implementation, 
+we always need to change and duplicate most of our code to support new implementation. 
+
+Java has excellent support of polymorphism in terms of Inheritance, method overloading and method overriding. 
+
+===============================================================================
+Inheritance
+Inheritance in Java or OOPS (Object oriented programming) is a feature which allows to code reusability.  In  other words Inheritance  self implies inheriting or we can say acquiring something from other.
+
+Inheritance can be achieved in Java through two keywords:
+·          extends
+·          implements
+
+1) One sub class can extend only one super class in Java but it can implement multipel interface.
+2) Private member of super class can not be inherited in subclass e.g. private field and private methods.
+3) Default member can only be inherited in same package subclass not in another package.
+4) Constructor in Java is not inherited by subclass.
+5) If a class implements Interface or extends abstract class , it needs to override all abstract methods untile it is not abstract.
+6) Multiple inheritance is not supported in java but we can achieve this by using interface .One class can implement multiple interface
+7) In Java class never extends the interface rather it implements interface
+8) One interface can extends other interface in Java.
+===============================================================================
+

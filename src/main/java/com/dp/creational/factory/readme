@@ -1,0 +1,18 @@
+FACTORY PATTERN AND OPEN CLOSE PRINCIPLE
+
+http://java.globinch.com/patterns/design-patterns/factory-design-patterns-and-open-closed-principle-ocp-in-solid/#Open-Closed-Principle
+
+The factory pattern (also known as the factory method pattern) is a creational 
+design pattern. 
+
+A factory is a JavaSW class that is used to encapsulate object creation code.
+
+Define an interface for creating a single object, but let subclasses decide which class to instantiate. 
+Factory Method lets a class defer instantiation to subclasses
+
+A factory class instantiates and returns a particular type of object based on data passed to the factory. 
+The different types of objects that are returned from a factory typically are subclasses of a common parent class.
+
+
+JAVA EXAMPLES
+java.util.ResourceBundle#getBundle()

@@ -1,0 +1,15 @@
+The strategy pattern is a behavioral object design pattern. In the
+strategy pattern,
+different algorithms are represented as Concrete Strategy classes,
+and they share a
+common Strategy interface.
+
+A Context object contains a reference to a Strategy. By changing the Context's
+Strategy,
+different behaviors can be obtained.
+
+The strategy pattern is one way that composition can be used as an alternative
+to subclassing
+
+
+java.util.Comparator#compare()

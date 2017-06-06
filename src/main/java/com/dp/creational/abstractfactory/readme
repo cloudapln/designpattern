@@ -1,0 +1,8 @@
+Provide an interface for creating families of related or dependent objects 
+without specifying their concrete classes.
+
+
+JAVA EXAMPLES
+javax.xml.parsers.DocumentBuilderFactory#newInstance()
+javax.xml.transform.TransformerFactory#newInstance()
+javax.xml.xpath.XPathFactory#newInstance()

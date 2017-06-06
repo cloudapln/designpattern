@@ -1,0 +1,9 @@
+http://www.javaworld.com/article/2074938/core-java/too-many-parameters-in-java-methods-part-3-builder-pattern.html
+
+The intent of the Builder design pattern is to separate the construction of a 
+complex object from its representation. 
+By doing so the same construction process can create different representations.
+
+JAVA Examples
+java.lang.StringBuilder#append() (unsynchronized)
+java.lang.StringBuffer#append() (synchronized)

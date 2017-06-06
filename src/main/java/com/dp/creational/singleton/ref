@@ -1,0 +1,7 @@
+WHen To Use Singleton
+Just want to make sure single instance of class
+
+http://howtodoinjava.com/2012/10/22/singleton-design-pattern-in-java/#eager_initialization
+
+java.awt.Desktop#getDesktop()
+java.lang.Runtime#getRuntime()
